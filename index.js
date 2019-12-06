@@ -232,9 +232,7 @@ function sortCarInventory(inventory) {
 function getModelYears(inventory) {
   let modelYears = [];
   for (let i = 0; i < inventory.length; i++) {
-    if (inventory[i].car_year === inventory.car_year) {
-      modelYears.push(inventory[i]);
-    }
+    modelYears.push(inventory[i].car_year);
   }
   return modelYears;
 }
